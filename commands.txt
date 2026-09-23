@@ -1,0 +1,43 @@
+npx playwright show-trace test-results/end-to-end-test-case-1---e-85073----Sauce-Labs-Fleece-Jacket-chromium/trace.zip
+
+npx playwright test tests/tagging.spec.js --grep "@smoke" --grep-invert "@reg"
+
+//installation
+npm i -D @playwright/test allure-playwright
+
+allure command line:
+npm install -g allure-commandline --save-dev
+
+//report config
+["allure-playwright",{outputFolder: 'allure-results'}]
+
+//generate report
+allure generate allure-results -o ./reports/allure-report --clean
+
+//report
+allure open ./reports/allure-report
+
+//Install the dotEnv
+npm install dotenv --save-dev
+
+//bash
+//ENV=uat npx playwright test // ENV=uat npx Playwright test end-to-end.spec.js
+
+powershell
+$env:ENV="qa"; npx playwright test // $env:ENV="qa"; npx Playwright test end-to-end.spec.js
+
+//even more cleaner and different env
+npm install -D cross-env --save-dev
+
+//git command:
+//-----------
+cd /path/to/your/project
+
+git init
+git add .
+git commit -m "Initial commit"
+
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_NEW_REPO.git
+
+git push -u origin main
