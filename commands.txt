@@ -41,3 +41,10 @@ git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_NEW_REPO.git
 
 git push -u origin main
+
+git pull origin main --allow-unrelated-histories
+
+//conflicts
+git add .
+git commit -m "Merge remote repository with local code"
+git push -u origin main
