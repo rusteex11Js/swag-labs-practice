@@ -58,11 +58,15 @@ jobs:
       - name: Run Playwright tests
         run: npm run chrome-browser:qa_CI -- --project="$BROWSER"
 
-      # 6. generate the allure report
+      # 6. Install the allure dependencies
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+      # 7. generate the allure report
       - name: genearte the allure report
         run: npm run allure:generate
 
-      # 7. Upload report folder
+      # 8. Upload report folder
       # This will run even if the tests fail
       - name: Upload Playwright report
         if: ${{ !cancelled() }}
