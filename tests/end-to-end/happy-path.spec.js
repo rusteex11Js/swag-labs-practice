@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/LoginPage";
-import { InventoryPage } from "../pages/InventoryPage";
-import { CartPage } from "../pages/CartPage";
-import { CheckoutPage } from "../pages/CheckoutPage";
-import { OrderCompletePage } from "../pages/OrderCompletePage";
-import loginData from "../data/index.js";
+import { LoginPage } from "../../pages/LoginPage.js";
+import { InventoryPage } from "../../pages/InventoryPage.js";
+import { CartPage } from "../../pages/CartPage.js";
+import { CheckoutPage } from "../../pages/CheckoutPage.js";
+import { OrderCompletePage } from "../../pages/OrderCompletePage.js";
+import loginData from "../../data/index.js";
 
 import fs from "node:fs";
 import * as allure from "allure-js-commons";
