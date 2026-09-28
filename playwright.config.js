@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 
 const environment = process.env.ENV || "qa";
-console.log("env",environment);
+console.log("env", environment);
 
 // dotenv.config();
 
@@ -20,7 +20,7 @@ fs.writeFileSync(
   `Environment=${environment.toUpperCase()}
 Browser=${process.env.BROWSER}
 Application_URL=${process.env.APP_BASE_URL}
-`
+`,
 );
 
 export default defineConfig({
@@ -58,6 +58,10 @@ export default defineConfig({
     {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },
+    },
+    {
+      name: "webkit",
+      use: { ...devices["Desktop Safari"] },
     },
   ],
 });

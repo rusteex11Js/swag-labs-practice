@@ -10,7 +10,7 @@ on:
         type: choice
         options:
           - qa
-          - staging
+          - uat
           - prod
 
       browser:
@@ -20,7 +20,7 @@ on:
         type: choice
         options:
           - All
-          - chromium
+          - chrome
           - firefox
           - webkit
 
