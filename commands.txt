@@ -48,3 +48,37 @@ git pull origin main --allow-unrelated-histories
 git add .
 git commit -m "Merge remote repository with local code"
 git push -u origin main
+
+
+
+
+//git:
+git clone "https://github.com/rusteex11Js/swag-labs-practice.git"
+git status
+
+//after changes
+git add "file"
+git add .
+git status
+
+//commit:
+git commit -m "I have updated the end to end flow spec"
+git status
+
+//push your changes:
+git push
+
+
+//Creating branch and pushing changes on your branch:
+//------------------------------------------------
+git checkout -b <branch name>
+git status
+
+
+
+
+
+
+
+
+
