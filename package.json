@@ -8,7 +8,7 @@
   "license": "ISC",
   "type": "commonjs",
   "scripts": {
-    "ui-chrome": "npx Playwright test ui/end-to-end.spec.js --project=chrome",
+    "ui-chrome": "npx playwright test ui/end-to-end.spec.js --project=chrome",
     "ui-chrome:qa": "cross-env ENV=qa npx Playwright test ui/end-to-end.spec.js --project=chrome",
     "ui-firefox:qa": "cross-env ENV=qa npx Playwright test ui/end-to-end.spec.js  --project=firefox",
     "all-browser-smoke:qa": "cross-env ENV=qa npx playwright test ui/end-to-end.spec.js  --grep \"@smoke\" --grep-invert \"@sanity\"",
