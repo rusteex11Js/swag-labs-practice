@@ -75,10 +75,30 @@ git checkout -b <branch name>
 git status
 
 
+//Jenkins:
+//--------
+https://get.jenkins.io/war-stable/2.541.3/
 
 
+//Jenkins init on local system:
+//---------
+java -jar C:\Users\Vinot\Desktop\jenkins\jenkins.war
 
 
+//local host - jenkins:
+//---------------------
+URL - http://localhost:8080/
+
+step 1:
+//------
+cd C:\Users\Vinot\Desktop\github_practice\swag-labs-practice
+npm install
+npx playwright install
+
+step 2:
+//----------
+cd C:\Users\Vinot\Desktop\github_practice\swag-labs-practice
+npx playwright test ui/end-to-end.spec.js --project=chrome
 
 
 
